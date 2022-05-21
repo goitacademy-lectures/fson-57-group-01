@@ -5,30 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Britlex</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="./index.html">Britlex</a>
+    <!-- Header section -->
+    <header class="page-header" id="header">
+      <a href="./index.html">Brit<span>lex</span></a>
       <nav>
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Contacts</a></li>
+          <li>
+            <a href="#header">Home</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#about">About Us</a>
+          </li>
+          <li>
+            <a href="#pricing">Pricing</a>
+          </li>
+          <li>
+            <a href="#contacts">Contacts</a>
+          </li>
         </ul>
       </nav>
       <button type="button">Let&#39;s Talk</button>
     </header>
     <main>
-      <section>
-        <div>
-          <h1>Learn Any Foreign Language</h1>
-          <p>
+      <!-- Hero section -->
+      <section class="section-hero">
+        <div class="hero-wrapper">
+          <h1 class="hero-title">Learn Any Foreign Language</h1>
+          <p class="hero-text">
             With our teachers who write a program for each student, you will be
             able to make your first sketch after the first lesson.
           </p>
-          <button type="button">Get started</button>
+          <button class="hero-btn" type="button">Get started</button>
           <img
             src="./images/hero/bulb-icon.png"
             alt="icon"
@@ -37,6 +50,7 @@
           />
         </div>
         <img
+          class="hero-img"
           src="./images/hero/learning-languages.png"
           alt="learning-languages"
           width="654"
@@ -44,29 +58,31 @@
         />
       </section>
 
-      <section>
-        <h2>Skills</h2>
-        <ul>
-          <li>
+      <!-- Skills section -->
+      <section class="section-skills" id="skills">
+        <h2 class="skills-title">Skills</h2>
+        <ul class="skills-list">
+          <li class="skills-item">
             <img
+              class="skills-img"
               src="./images/skills/card_01.png"
               alt="speaking"
               width="390"
               height="390"
             />
-            <h3>Speaking</h3>
-            <p>
+            <h3 class="skills-subtitle">Speaking</h3>
+            <p class="skills-text">
               Improve your English skills and confidence. Live classes and
               interactive lessons online. 20% extra free for a limited time only
             </p>
-            <p>
+            <p class="skills-text">
               Learn English online and improve your skills through our
               high-quality courses and resources – all designed for adult
               language learners.
             </p>
-            <a href="">Learn more</a>
+            <a class="skills-link" href="">Learn more</a>
           </li>
-          <li>
+          <li class="skills-item">
             <img
               src="./images/skills/card_02.png"
               alt="writing"
@@ -80,7 +96,7 @@
             </p>
             <a href="">Learn more</a>
           </li>
-          <li>
+          <li class="skills-item">
             <img
               src="./images/skills/card_03.png"
               alt="reading"
@@ -94,7 +110,7 @@
             </p>
             <a href="">Learn more</a>
           </li>
-          <li>
+          <li class="skills-item">
             <img
               src="./images/skills/card_04.png"
               alt="listening"
@@ -110,7 +126,9 @@
           </li>
         </ul>
       </section>
-      <section>
+
+      <!-- About us section  -->
+      <section class="section-about" id="about">
         <h2>About Us</h2>
         <p>
           The model offers a framework for discussing problems related to the
@@ -140,6 +158,108 @@
           height="540"
         />
       </section>
+
+      <!-- Pricing section -->
+      <section class="section-pricing" id="pricing">
+        <h2>Pricing</h2>
+        <ul>
+          <li>
+            <img
+              src="./images/pricing/online.png"
+              alt="online course"
+              width="426"
+              height="320"
+            />
+            <h3>Self-study online course</h3>
+            <p>
+              Start learning English online in live classes with qualified EC
+              teachers and students from all over the world.
+            </p>
+            <p>
+              <span>&#65505;5.99</span>
+              <span>per month</span>
+            </p>
+          </li>
+          <li>
+            <img
+              src="./images/pricing/lesson.png"
+              alt="online classes"
+              width="426"
+              height="320"
+            />
+            <h3>Live online classes</h3>
+            <p>
+              Interactive group classes with expert teachers. Free 7-day trial
+            </p>
+            <p>
+              <span>&#65505;12.99</span>
+              <span>per month</span>
+            </p>
+          </li>
+          <li>
+            <img
+              src="./images/pricing/webinar.png"
+              alt="personal lesson"
+              width="426"
+              height="320"
+            />
+            <h3>Personal Tuition</h3>
+            <p>
+              Online one-to-one English tutoring – enjoy our first session for
+              only $1
+            </p>
+            <p>
+              <span>&#65505;12.99</span>
+              <span>per month</span>
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Contact us section -->
+      <section class="section-contacts" id="contacts">
+        <img
+          src="./images/contact/contact.png"
+          alt="contact"
+          width="425"
+          height="430"
+        />
+        <div>
+          <h2>Contact Us</h2>
+          <p>
+            Discover your current English level by taking our free online
+            English test. Sign up to our newsletter for learning tips and free
+            resources
+          </p>
+          <form action="">
+            <input type="email" placeholder="Enter Your E-mail" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
     </main>
+    <footer class="page-footer">
+      <a href="./index.html">Brit<span>lex</span></a>
+      <ul>
+        <li>
+          <a href="" target="_blank" rel="noopener norefferer"
+            >Terms and Conditions</a
+          >
+        </li>
+        <li>
+          <a href="" target="_blank" rel="noopener norefferer"
+            >Privacy Policy</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://youtube.com"
+            target="_blank"
+            rel="noopener norefferer"
+            >Cookie Policy</a
+          >
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
