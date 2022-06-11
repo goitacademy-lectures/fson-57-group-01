@@ -1,6 +1,5 @@
 body {
 	font-family: "Poppins", sans-serif;
-	color: #000000;
 }
 
 /**
@@ -14,8 +13,7 @@ h3,
 h4,
 h5,
 h6,
-p
-{
+p {
 	margin: 0;
 }
 
@@ -37,272 +35,42 @@ img {
 	width: 1378px;
 	padding-left: 20px;
 	padding-right: 20px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	outline: 1px solid red;
 }
-/* -------- Header ------- */
+/* Header */
 .logo {
 	font-weight: 400;
 	font-size: 36px;
-	line-height: 1.5;
-	
+	line-height: 54px;
+	/* identical to box height */
+
 	text-align: center;
 	letter-spacing: 0.03em;
 
 	color: #000000;
   margin-right: 228px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.logo-header{
-  color: #939393;
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  margin-top: 55px;
-  margin-bottom: 55px;
 }
-
 .header-list{
   display: flex;
   align-items: center;
 }
-
 .header-btn{
-  min-width: 200px;
   margin-left: auto;
-  padding: 20px 56px ;
-  border: 2px solid #263238;
-  border-radius: 10px;
 }
-
 .header-item{
   margin-right: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
-
 .header-item:last-child{
   margin-right: 0;
 }
-
 .header-link{
   display: block;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.5;
-
-  color: #263238;
-}
-
-/* ----- Hero section ------- */
-
-
-.section-hero {
-	display: flex;
-
-	margin-bottom: 180px;
-}
-
-.hero-wrapper {
-	display:inline-block;
-}
-
-.hero-title {
-font-weight: 600;
-font-size: 64px;
-line-height: 1.25;
-
-color: #000000;
-
-margin-bottom: 40px;
-}
-
-.hero-text {
-font-size: 24px;
-line-height: 1.5;
-
-color: #8F95A5;
-
-margin-bottom: 60px;
-}
-.hero-btn {
-	font-size: 36px;
-line-height: 1.5;
-text-align: center;
-letter-spacing: 0.03em;
-
-	padding: 23px 64px;
-    width: 426px;
-    height: 100px;
-	color: #FFFFFF;
-	background: #263238;
-    border-radius: 10px;
-}
-.hero-img{
-  max-height: 510px;
-  margin-left: 144px;
-}
-
-
-/* ------- Skills section ------ */
-
-.section-skills {
-	display: flex;
-	flex-direction: column;
-
-	margin-bottom: 180px;
-}
-
-.skills-title{
-	/* display: flex;
-	justify-content: center; */
-	
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 60px;
-
-	font-weight: 600;
-    font-size: 48px;
-    line-height: 1.5;
-}
-
-.skils-wrapper{
-	display: flex;
-	justify-content: center;
-	width: 1338px;
-	margin-top: -30px;
-	margin-left: auto;
-	margin-right: auto;
-}
-.skills-item-left{
-	background: #F5F5F5;
-	border-radius: 10px;
-	margin-top: 30px;
-	padding: 32px 18px;
-}
-
-.skills-list {
-	display: flex;
-	max-width: 426px;
-	min-height: 947px;
-
-}
-
-.skills-box-right{
-	display: flex;
-	flex-wrap: wrap ;
-}
-
-.skills-item:not(:last-child){
-max-width: 426px;
-min-height: 569px;
-}
-
-.skills-item{
-	background-color: #F5F5F5;
-	border-radius: 10px;
-	margin-top: 30px;
-	margin-left: 30px;
-	padding: 32px 18px;
-}
-
-.skills-item:nth-child(3){
-display: flex;
-flex-direction: row-reverse;
-
-}
-.skills-img{
-	margin-bottom: 24px;
-}
-
-.skills-box{
-	margin-right: 114px;
-}
-
-.skills-subtitle{
-	margin-bottom: 20px;
-	font-weight: 600;
-font-size: 30px;
-line-height: 1.5;
-color: #263238;
-}
-.skills-text{
-	padding-bottom: 30px;
-	font-size: 16px;
-line-height: 1.5;
-color: #8F95A5;
-}
-.skills-text:nth-last-child(2){
-    padding-bottom: 0;
-	margin-bottom: 30px;
-}
-.skills-link{
-	display: inline-block;
-	padding: 15px 52px;
-	background-color: #263238;
-	color: #FFFFFF;
-border-radius: 10px;
-}
-
-/* ------- About us section ------- */
-
-.section-about{
-	display: flex;
-	justify-content: space-between;
-}
-
-.about-page{
-    width: 652px;
-}
-
-.about-subtitle{
-	margin-bottom: 60px;
-
-	font-weight: 600;
-    font-size: 48px;
-    line-height: 1.5;
-}
-
-.around-text{
-	font-size: 20px;
-line-height: 1.8;
-color: #8F95A5;
-
-margin-bottom: 30px;
-}
-
-.about-card-set{
-	display: flex;
-	margin-left: auto;
-	margin-right: auto;
-	width:555px;
-}
-
-.card-item+.card-item{
-	margin-left: 131px;
-}
-.card-subtitle{
-	font-weight: 600;
-font-size: 48px;
-line-height: 1.5;
-text-align: center;
-
-color: #2A3246;
-
-padding-bottom: 6px;
-}
-
-.card-text{
-	font-size: 20px;
-line-height: 1.5;
-text-align: center;
-
-color: #8F95A5;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
