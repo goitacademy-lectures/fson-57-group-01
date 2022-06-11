@@ -28,7 +28,7 @@
 		<header class="page-header" id="header">
 			<div class="container header-container">
 				<a class="logo link" href="./index.html">
-					Brit<span>lex</span>
+					Brit<span class="logo-header">lex</span>
 				</a>
 				<nav>
 					<ul class="list header-list">
@@ -54,7 +54,7 @@
 		</header>
 		<main>
 			<!-- Hero section -->
-			<section class="section-hero">
+			<section class="container section-hero">
 				<div class="hero-wrapper">
 					<h1 class="hero-title">Learn Any Foreign Language</h1>
 					<p class="hero-text">
@@ -74,10 +74,11 @@
 			</section>
 
 			<!-- Skills section -->
-			<section class="section-skills" id="skills">
+			<section class="container section-skills" id="skills">
 				<h2 class="skills-title">Skills</h2>
+			<div class="skils-wrapper">
 				<ul class="skills-list list">
-					<li class="skills-item">
+					<li class="skills-item-left">
 						<img class="skills-img" src="./images/skills/card_01.png" alt="speaking" width="390" height="390" />
 						<h3 class="skills-subtitle">Speaking</h3>
 						<p class="skills-text">
@@ -90,59 +91,66 @@
 						</p>
 						<a class="skills-link link" href="">Learn more</a>
 					</li>
+					</ul>
+					<ul class="skills-box-right list">
 					<li class="skills-item">
 						<img src="./images/skills/card_02.png" alt="writing" width="390" height="264" />
-						<h3>Writing</h3>
-						<p>
+						<h3 class="skills-subtitle">Writing</h3>
+						<p class="skills-text">
 							One of the most important and extensive areas of natural science, the science that studies substances,
 							also their composition
 						</p>
-						<a class="link" href="">Learn more</a>
+						<a class="skills-link link" href="">Learn more</a>
 					</li>
 					<li class="skills-item">
 						<img src="./images/skills/card_03.png" alt="reading" width="390" height="264" />
-						<h3>Reading</h3>
-						<p>
+						<h3 class="skills-subtitle">Reading</h3>
+						<p class="skills-text">
 							Perception and response actions of the user resulting from the use and/or upcoming use of the product,
 							system or service
 						</p>
-						<a class="link" href="">Learn more</a>
+						<a class="skills-link link" href="">Learn more</a>
 					</li>
-					<li class="skills-item">
+					<li class="skills-item ">
 						<img src="./images/skills/card_04.png" alt="listening" width="408" height="274" />
-						<h3>Listening</h3>
-						<p>
+						<div class="skills-box">
+						<h3 class="skills-subtitle">Listening</h3>
+						<p class="skills-text">
 							Here you can find activities to practise your listening skills. Listening will help you to improve your
 							understanding
 						</p>
-						<a class="link" href="">Learn more</a>
+						<a class="skills-link link" href="">Learn more</a>
+					</div>
 					</li>
 				</ul>
+			</div>
 			</section>
 
 			<!-- About us section  -->
-			<section class="section-about" id="about">
-				<h2>About Us</h2>
-				<p>
+			<section class="container section-about" id="about">
+				<div class="about-page">
+				<h2 class="about-subtitle">About Us</h2>
+				<p class="around-text">
 					The model offers a framework for discussing problems related to the user's experience, as well as possible
 					ways and means of solving them. Application development begins at the top level (strategy), where the future
 					software product is described quite abstractly from the point of view of the expectations of both users and
 					the customer.
 				</p>
-				<ul class="list">
-					<li>
-						<p>800</p>
-						<p>Pupils</p>
+				<ul class="about-card-set list">
+					<li class="card-item">
+						<p class="card-subtitle">800</p>
+						<p class="card-text">Pupils</p>
 					</li>
-					<li>
-						<p>18</p>
-						<p>Teachers</p>
+					<li class="card-item">
+						<p class="card-subtitle">18</p>
+						<p class="card-text">Teachers</p>
 					</li>
-					<li>
-						<p>6</p>
-						<p>Foreign languages</p>
+					<li class="card-item">
+						<p class="card-subtitle">6</p>
+						<p class="card-text">Foreign languages</p>
 					</li>
 				</ul>
+			</div>
 				<img src="./images/about/about_01.png" alt="about us" width="540" height="540" />
 			</section>
 
