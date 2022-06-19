@@ -14,25 +14,23 @@ h3,
 h4,
 h5,
 h6,
-p
-{
+p {
 	margin: 0;
 }
-
 img {
 	display: block;
 }
-
 .link {
 	text-decoration: none;
 	color: currentColor;
 }
-
 .list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
+
+/* Common styles */
 .container {
 	width: 1378px;
 	padding-left: 20px;
@@ -41,139 +39,99 @@ img {
 	margin-right: auto;
 	outline: 1px solid red;
 }
-/* -------- Header ------- */
+.main-title {
+	font-weight: 600;
+	font-size: 64px;
+	line-height: 1.25;
+}
+.section-title {
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 1.5;
+}
 .logo {
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 1.5;
-	
+
 	text-align: center;
 	letter-spacing: 0.03em;
 
 	color: #000000;
-  margin-right: 228px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+	margin-right: 228px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.logo-light {
+	color: #939393;
 }
 
-.logo-header{
-  color: #939393;
-}
-
+/*  Header  */
 .header-container {
-  display: flex;
-  align-items: center;
-  margin-top: 55px;
-  margin-bottom: 55px;
-}
-
-.header-list{
-  display: flex;
-  align-items: center;
-}
-
-.header-btn{
-  min-width: 200px;
-  margin-left: auto;
-  padding: 20px 56px ;
-  border: 2px solid #263238;
-  border-radius: 10px;
-}
-
-.header-item{
-  margin-right: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.header-item:last-child{
-  margin-right: 0;
-}
-
-.header-link{
-  display: block;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.5;
-
-  color: #263238;
-}
-
-/* ----- Hero section ------- */
-
-
-.section-hero {
 	display: flex;
+	align-items: center;
+}
+.nav-list {
+	display: flex;
+	align-items: center;
+}
+.nav-item {
+	margin-right: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.nav-item:last-child {
+	margin-right: 0;
+}
+.nav-link {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.5;
+	color: #263238;
+}
+.header-btn {
+	margin-left: auto;
+	padding: 20px 56px;
+	min-width: 320px;
 
-	margin-bottom: 180px;
+	font-size: 20px;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+
+	background-color: transparent;
+	border: 2px solid #263238;
+	border-radius: 10px;
+	cursor: pointer;
 }
 
+/*  Hero section  */
 .hero-wrapper {
-	display:inline-block;
+	display: inline-block;
 }
-
-.hero-title {
-font-weight: 600;
-font-size: 64px;
-line-height: 1.25;
-
-color: #000000;
-
-margin-bottom: 40px;
-}
-
 .hero-text {
-font-size: 24px;
-line-height: 1.5;
-
-color: #8F95A5;
-
-margin-bottom: 60px;
+	font-size: 24px;
+	line-height: 1.5;
+	color: #8f95a5;
 }
 .hero-btn {
-	font-size: 36px;
-line-height: 1.5;
-text-align: center;
-letter-spacing: 0.03em;
-
 	padding: 23px 64px;
-    width: 426px;
-    height: 100px;
-	color: #FFFFFF;
-	background: #263238;
-    border-radius: 10px;
+	min-width: 426px;
+
+	font-size: 36px;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+
+	background-color: #263238;
+	border-radius: 10px;
+	cursor: pointer;
 }
-.hero-img{
-  max-height: 510px;
-  margin-left: 144px;
-}
-
-
-/* ------- Skills section ------ */
-
-.section-skills {
-	display: flex;
-	flex-direction: column;
-
-	margin-bottom: 180px;
+.hero-img {
+	max-height: 510px;
 }
 
-.skills-title{
-	/* display: flex;
-	justify-content: center; */
-	
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 60px;
-
-	font-weight: 600;
-    font-size: 48px;
-    line-height: 1.5;
-}
-
-.skils-wrapper{
+/* Skills section */
+.skills-wrapper {
 	display: flex;
 	justify-content: center;
 	width: 1338px;
@@ -181,128 +139,149 @@ letter-spacing: 0.03em;
 	margin-left: auto;
 	margin-right: auto;
 }
-.skills-item-left{
-	background: #F5F5F5;
+.skills-item-left {
+	background: #f5f5f5;
 	border-radius: 10px;
 	margin-top: 30px;
 	padding: 32px 18px;
 }
-
 .skills-list {
 	display: flex;
 	max-width: 426px;
 	min-height: 947px;
-
 }
-
-.skills-box-right{
+.skills-box-right {
 	display: flex;
-	flex-wrap: wrap ;
+	flex-wrap: wrap;
 }
-
-.skills-item:not(:last-child){
-max-width: 426px;
-min-height: 569px;
+.skills-item:not(:last-child) {
+	max-width: 426px;
+	min-height: 569px;
 }
-
-.skills-item{
-	background-color: #F5F5F5;
+.skills-item {
+	background-color: #f5f5f5;
 	border-radius: 10px;
 	margin-top: 30px;
 	margin-left: 30px;
 	padding: 32px 18px;
 }
-
-.skills-item:nth-child(3){
-display: flex;
-flex-direction: row-reverse;
-
+.skills-item:nth-child(3) {
+	display: flex;
+	flex-direction: row-reverse;
 }
-.skills-img{
+.skills-img {
 	margin-bottom: 24px;
 }
-
-.skills-box{
+.skills-box {
 	margin-right: 114px;
 }
-
-.skills-subtitle{
+.skills-subtitle {
 	margin-bottom: 20px;
 	font-weight: 600;
-font-size: 30px;
-line-height: 1.5;
-color: #263238;
+	font-size: 30px;
+	line-height: 1.5;
+	color: #263238;
 }
-.skills-text{
+.skills-text {
 	padding-bottom: 30px;
 	font-size: 16px;
-line-height: 1.5;
-color: #8F95A5;
+	line-height: 1.5;
+	color: #8f95a5;
 }
-.skills-text:nth-last-child(2){
-    padding-bottom: 0;
+.skills-text:nth-last-child(2) {
+	padding-bottom: 0;
 	margin-bottom: 30px;
 }
-.skills-link{
+.skills-link {
 	display: inline-block;
 	padding: 15px 52px;
 	background-color: #263238;
-	color: #FFFFFF;
-border-radius: 10px;
+	color: #ffffff;
+	border-radius: 10px;
 }
 
-/* ------- About us section ------- */
-
-.section-about{
-	display: flex;
-	justify-content: space-between;
-}
-
-.about-page{
-    width: 652px;
-}
-
-.about-subtitle{
-	margin-bottom: 60px;
-
-	font-weight: 600;
-    font-size: 48px;
-    line-height: 1.5;
-}
-
-.around-text{
+/* About section */
+.abound-text {
 	font-size: 20px;
-line-height: 1.8;
-color: #8F95A5;
-
-margin-bottom: 30px;
+	line-height: 1.8;
+	color: #8f95a5;
 }
-
-.about-card-set{
-	display: flex;
-	margin-left: auto;
-	margin-right: auto;
-	width:555px;
-}
-
-.card-item+.card-item{
-	margin-left: 131px;
-}
-.card-subtitle{
+.about-heading {
 	font-weight: 600;
-font-size: 48px;
-line-height: 1.5;
-text-align: center;
+	font-size: 48px;
+	line-height: 1.5;
+	text-align: center;
 
-color: #2A3246;
+	color: #2a3246;
 
-padding-bottom: 6px;
+	padding-bottom: 6px;
+}
+.about-descr {
+	font-size: 20px;
+	line-height: 1.5;
+	text-align: center;
+
+	color: #8f95a5;
 }
 
-.card-text{
+/* Pricing section */
+.pricing-title {
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 1.6;
+	text-transform: capitalize;
+	color: #263238;
+}
+.pricing-text {
 	font-size: 20px;
-line-height: 1.5;
-text-align: center;
+	line-height: 1.5;
 
-color: #8F95A5;
+	color: #8f95a5;
+}
+.pricing-meta {
+	background-color: #eeeeee;
+	border-radius: 5px;
+}
+.pricing-meta-cost {
+	font-size: 24px;
+	line-height: 36px;
+	text-align: center;
+	color: #263238;
+}
+
+.pricing-meta-period {
+	font-size: 18px;
+	line-height: 1.5;
+	text-align: center;
+	color: #546269;
+}
+
+/* Contact section */
+.contacts-descr {
+	font-size: 20px;
+	line-height: 1.5;
+	color: #8f95a5;
+}
+.subscribe-form-input {
+	font-size: 16px;
+	line-height: 1.88;
+	color: #8f95a5;
+}
+.subscribe-form-btn {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+
+	background-color: #263238;
+	border-radius: 10px;
+}
+
+/* Footer section */
+.footer-link {
+	font-size: 24px;
+	line-height: 36px;
+	letter-spacing: 0.02em;
+	color: #8f95a5;
 }
