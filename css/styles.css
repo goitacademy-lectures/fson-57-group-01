@@ -272,10 +272,38 @@ img {
 }
 
 /* About section */
-.abound-text {
+
+.about .container {
+	display: flex;
+}
+
+.about-list {
+	display: flex;
+	justify-content: center;
+}
+
+.about-left-side {
+	width: 652px;
+}
+
+.about-item {
+	max-width: 108px;
+}
+
+.about-item:not(:last-child) {
+	margin-right: 131px;
+}
+
+.about-text {
 	font-size: 20px;
 	line-height: 1.8;
 	color: #8f95a5;
+
+	margin-bottom: 30px;
+}
+
+.img-about {
+	margin-left: auto;
 }
 .about-heading {
 	font-weight: 600;
